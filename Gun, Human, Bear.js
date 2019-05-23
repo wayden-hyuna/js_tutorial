@@ -1,18 +1,18 @@
 
-function RngToXExclusive(min,max){
-    var randomNum = Math.random() * ((max+1) - min) + min;
+function RngToXExclusive(max){
+    var randomNum = Math.random() * max;
     return Math.floor(randomNum);
 }
 
 function GenCompChoice(){
     var compChoice = RngToXExclusive(1,3);
-    if (compChoice == 1){
+    if (compChoice == 0){
         return "bear";
     }
-    else if (compChoice == 2){
+    else if (compChoice == 1){
         return "human";
     }
-    else if (compChoice == 3){
+    else if (compChoice == 2){
         return "gun";
     }
 }
